@@ -10,7 +10,6 @@ A web application for managing invoices, built with **Vue.js** and **Laravel**. 
 - **Edit Invoice:** Update invoice details as needed.
 - **Delete Invoice:** Remove invoices that are no longer needed.
 - **Print Invoice:** Print invoices directly from the app.
-- **No Authentication Required:** Operates without user authentication.
 
 ## Tech Stack
 
@@ -25,3 +24,47 @@ A web application for managing invoices, built with **Vue.js** and **Laravel**. 
 - **PHP 8.1 or higher**
 - **Composer**
 - **MySQL**
+
+## Setup
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/invoice-app.git
+cd invoice-app
+Install PHP Dependencies
+bash
+Copy code
+composer install
+Create a .env File
+bash
+Copy code
+cp .env.example .env
+Update Your .env File with Database Credentials
+Open the .env file and configure your database settings:
+
+env
+Copy code
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=invoice_db
+DB_USERNAME=root
+DB_PASSWORD=yourpassword
+Generate the Application Key
+bash
+Copy code
+php artisan key:generate
+Run Migrations to Set Up the Database
+bash
+Copy code
+php artisan migrate
+Start the Laravel Development Server
+bash
+Copy code
+php artisan serve
+Visit http://localhost:8000 in your browser to access the application.
+
+Usage
+Access the app in your browser.
+Start filtering, adding, viewing, editing, deleting, and printing invoices.
