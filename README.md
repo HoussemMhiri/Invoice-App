@@ -32,6 +32,7 @@ A web application for managing invoices, built with **Vue.js** and **Laravel**. 
 ```bash
 git clone https://github.com/yourusername/invoice-app.git
 cd invoice-app
+````
 Install PHP Dependencies
 bash
 Copy code
